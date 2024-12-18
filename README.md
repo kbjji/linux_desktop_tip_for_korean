@@ -28,7 +28,8 @@ balanced=balanced-battery
 ```
 case 2) tuned-ppd 서비스 중지
 ```
-# systemctl disable tuned-ppd
+# systemctl stop tuned-ppd
+# systemctl mask tuned-ppd
 ```
 case 3) tuned-ppd 삭제
 - (주의) 몇몇 데스크탑 환경은 **tuned-ppd**에 의존성을 가진다.

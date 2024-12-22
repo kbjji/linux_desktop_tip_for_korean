@@ -38,8 +38,7 @@ case 3) tuned-ppd 삭제
 ```
 
 # Wayland 환경에 키매핑 설정 (한영키 설정)
-- **keyd**
-[ked](https://github.com/rvaiya/keyd)
+- **keyd** [keyd](https://github.com/rvaiya/keyd)
 - Fedora 리눅스에서는 copr 저장소를 이용해야 한다.
 ```
 # dnf copr enable dspom/keyd

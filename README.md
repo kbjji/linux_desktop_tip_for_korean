@@ -37,6 +37,30 @@ case 3) tuned-ppd 삭제
 # dnf remove tuned-ppd
 ```
 
+# Wayland 환경에 키매핑 설정 (한영키 설정)
+- **keyd**
+[ked](https://github.com/rvaiya/keyd)
+- Fedora 리눅스에서는 copr 저장소를 이용해야 한다.
+```
+# dnf copr enable dspom/keyd
+# dnf install keyd
+```
+- 설정 파일
+```
+# vi /etc/keyd/default.conf
+[ids]
 
+*
 
+[main]
 
+# 한영키
+rightalt = hangeul
+
+# 한자키
+rightcontrol = hanja
+```
+- 서비스 활성화
+```
+sudo systemctl enable --now keyd
+```

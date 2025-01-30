@@ -63,3 +63,14 @@ rightcontrol = hanja
 ```
 sudo systemctl enable --now keyd
 ```
+
+# GDM 로고 커스텀마이징
+- /etc/dconf/db/gdm.d/01-override-logo
+```
+[org/gnome/login-screen]
+logo='/path/to/logo.png'
+```
+- 시스템 레벨 데이타베이스를 갱신한다.
+```
+# dconf update
+```

@@ -74,3 +74,11 @@ logo='/path/to/logo.png'
 ```
 # dconf update
 ```
+
+# Wayland 환경에서 Brave 웹 브라우저 메뉴 그림자 문제
+- #zone-platform-hint 키를 Wayland로 직접 지정해 줘야 한다.
+```
+주소줄 -> brave://flags/
+Preferred Ozone platform -> Wayland
+Brave 웹 브라우저 재시작
+``` 
